@@ -66,6 +66,8 @@ while running:
                 inputk = 'r'
             elif event.key == pygame.K_c:
                 inputk = 'c'
+            elif event.key == pygame.K_a:
+                inputk = 'a'
             elif event.key == pygame.K_b:
                 inputk = 'b'
             elif event.key == pygame.K_n:
@@ -74,26 +76,30 @@ while running:
                 inputk = 'g'
             elif event.key == pygame.K_s:
                 inputk = 's'
+            elif event.key == pygame.K_l:
+                inputk = 'l'
 
             if isinstance(inputk, str):
                 if inputk == 'r':
-                    grid.dc_checker(lclick, rclick)
-                elif inputk == 'c':
-                    grid.clear_board(surface)
-                elif inputk == 'b':
-                    grid.get_comments(lclick, rclick)
-                elif inputk == 'n':
-                    grid.naked_single(lclick, rclick, surface)
-                    grid.naked_double(lclick,rclick,surface)
-                elif inputk == 'g':
                     grid.solver(surface)
+                elif inputk == 'c':
+                    print(grid.get_comments(lclick,rclick))
+                elif inputk == 'b':
+                    grid.n_triplet_b(lclick, rclick, surface)
+                elif inputk == 'n':
+                    grid.ppair_h(lclick, rclick, surface)
+                elif inputk == 'g':
+                    grid.n_triplet_h(lclick, rclick, surface)
+                elif inputk == 'a':
+                    grid.ppair_v(lclick, rclick, surface)
                 elif inputk == 's':
-                    grid.generate_candidates(surface)                     
+                    grid.generate_candidates(surface)
+                elif inputk == 'l':
+                    grid.dc_checker(lclick, rclick, surface)                     
 
             if isinstance(inputk, int):
                 if l_click == True:
                     if grid.get_cell_value(lclick, rclick) == 0:
-                        #grid.set_cell_value(lclick, rclick, inputk)
                         grid.print_value(surface, lclick, rclick, inputk)
                     l_click = False
                     r_click = False
