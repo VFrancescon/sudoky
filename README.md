@@ -4,7 +4,7 @@
 ## what it can't do
 
 ## currently work in progress
-thanks Rahul
+thanks Rahul!
 
 will actually write this later
 
