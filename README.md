@@ -17,10 +17,10 @@ A final version of the program will also be able to copy a grid from a screensho
 Run the following in the installation folder
 
 1. [Install pip](https://pip.pypa.io/en/stable/installing/)
-2. git clone https://github.com/VFrancescon/sudoky
-3. pip install -r requirements.txt
+2. `git clone https://github.com/VFrancescon/sudoky`
+3. `pip install -r requirements.txt`
 4. install helvetica.ttf
-5. python3 game.py
+5. `python3 game.py`
 
 
 ### Special thanks
