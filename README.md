@@ -1,3 +1,6 @@
+# DEPRACTED
+Sudoky development has now moved on to [Version 2](https://github.com/VFrancescon/sudoky2).
+
 # sudoky
 ## Functionality and Usage
 Sudoky is a python based Sudoku application. In its current iteration, the program is able to print a sudoky grid (with values edited within the grid.py file), allows the user to insert values into the grid (left click -> number input) or comment values (right click -> number input).
